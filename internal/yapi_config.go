@@ -35,7 +35,7 @@ func (r *Workflow) AddYapiConfig(host, token string) error {
 	}
 
 	for _, v := range configs {
-		if v.ID == config.ID {
+		if v.ID == config.ID && isSameHost(v.Host, config.Host) {
 			return nil
 		}
 	}
