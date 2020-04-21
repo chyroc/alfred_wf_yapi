@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C66B3B96-EC02-4B02-A5B1-F46C742BF91D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6C3F02A-C012-4FE5-8298-C3F01348BFD6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>chyroc</string>
@@ -60,7 +73,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./alfred_wf_yapi "config=$1"</string>
+				<string>./alfred_wf_yapi "config=$@"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -68,7 +81,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>配置 yapi</string>
+				<string>yapi 配置列表</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -89,7 +102,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./alfred_wf_yapi "$1"</string>
+				<string>./alfred_wf_yapi "config.select=$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -104,6 +117,78 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./alfred_wf_yapi "search.select=$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E6C3F02A-C012-4FE5-8298-C3F01348BFD6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>yapi.search</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./alfred_wf_yapi "search=$@"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>yapi 搜索接口</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C66B3B96-EC02-4B02-A5B1-F46C742BF91D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -112,16 +197,30 @@
 		<key>66979C8B-B599-4105-BF92-3BFE299E7E9F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>385</integer>
+			<integer>375</integer>
 			<key>ypos</key>
-			<integer>300</integer>
+			<integer>155</integer>
 		</dict>
 		<key>7BE3B132-98D8-49FE-A1FF-D27DDCBB0098</key>
 		<dict>
 			<key>xpos</key>
-			<integer>135</integer>
+			<integer>105</integer>
 			<key>ypos</key>
-			<integer>295</integer>
+			<integer>35</integer>
+		</dict>
+		<key>C66B3B96-EC02-4B02-A5B1-F46C742BF91D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>125</integer>
+			<key>ypos</key>
+			<integer>435</integer>
+		</dict>
+		<key>E6C3F02A-C012-4FE5-8298-C3F01348BFD6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>360</integer>
+			<key>ypos</key>
+			<integer>330</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
