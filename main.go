@@ -10,6 +10,8 @@ import (
 	"github.com/chyroc/alfred_wf_yapi/internal"
 )
 
+var version = "1.0.2"
+
 func run() error {
 	scope, arg := internal.Default.InputWithPre()
 	switch scope {
@@ -92,7 +94,7 @@ func run() error {
 func main() {
 	internal.Init()
 
-	log.Printf("run\n")
+	log.Printf("run, version=%s\n", version)
 
 	internal.Default.Run(run)
 }
