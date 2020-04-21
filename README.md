@@ -6,7 +6,9 @@
 
 ## 安装
 
-点击下载 xx
+点击下载: [alfred_wf_yapi v1.0.2 下载地址](https://github.com/chyroc/alfred_wf_yapi/releases/download/v1.0.2/yapi.1.0.2.alfredworkflow)
+
+双击下载得到的文件，按照提示安装插件
 
 ## 使用
 
